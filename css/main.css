@@ -459,6 +459,22 @@ html[dir='rtl'] .nav-li:last-of-type {
   color: #ee5d79;
 }
 
+html[dir='ltr'] .nav-a {
+  font-size: 15px;
+}
+
+@media (min-width: 1500px) {
+  html[dir='ltr'] .nav-a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  html[dir='ltr'] .nav-a {
+    font-size: 16px;
+  }
+}
+
 .drop-btn {
   position: relative;
 }
@@ -596,6 +612,7 @@ html[dir='rtl'] .drop-btn .sub-ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -1845,6 +1862,16 @@ footer {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 28px;
+}
+
+html[dir='ltr'] .foot-header {
+  font-size: 15px;
+}
+
+@media (min-width: 1500px) {
+  html[dir='ltr'] .foot-header {
+    font-size: 17px;
+  }
 }
 
 .nav-foot-li {
