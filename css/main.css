@@ -2141,6 +2141,8 @@ html[dir='rtl'] .close-btn {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: 30px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   nav .top-settings {
     position: absolute;
@@ -2169,8 +2171,9 @@ html[dir='rtl'] .close-btn {
   nav .nav-li {
     border-bottom: 1px solid #ededed;
     width: 100%;
-    padding: 0 5px 11px;
-    margin-bottom: 3px;
+    padding: 0 5px 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   nav .nav-li:last-of-type {
     border-bottom: none;
@@ -2179,7 +2182,7 @@ html[dir='rtl'] .close-btn {
     display: block;
   }
   nav .nav-a {
-    line-height: normal;
+    line-height: 38px;
   }
   nav .drop-btn .nav-a {
     display: -webkit-box;
@@ -2217,7 +2220,7 @@ html[dir='rtl'] .close-btn {
     opacity: 1;
     position: relative;
     top: auto;
-    padding: 0 15px;
+    padding: 0 15px 5px;
     -webkit-transition: none;
     transition: none;
     display: none;
