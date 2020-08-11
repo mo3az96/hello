@@ -1101,10 +1101,6 @@ html[dir='rtl'] .product .mo-addToFav {
   margin-top: 60px;
 }
 
-.banner-cont.mobile-banner {
-  display: none;
-}
-
 @media (max-width: 991px) {
   .banner-cont {
     margin-top: 40px;
@@ -1112,14 +1108,28 @@ html[dir='rtl'] .product .mo-addToFav {
 }
 
 @media (max-width: 767px) {
-  .banner-cont {
+  .banner-cont .container {
+    padding: 0;
+  }
+}
+
+.banner-cont .banner:nth-of-type(1) {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .banner-cont .banner:nth-of-type(1) {
     display: none;
   }
-  .banner-cont.mobile-banner {
+}
+
+.banner-cont .banner:nth-of-type(2) {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .banner-cont .banner:nth-of-type(2) {
     display: block;
-  }
-  .banner-cont.mobile-banner .container {
-    padding: 0;
   }
 }
 
